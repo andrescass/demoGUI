@@ -22,18 +22,30 @@ namespace demoGUI
     public partial class MainWindow : Window
     {
         private DispatcherTimer timer;
+        private bool launching;
         public MainWindow()
         {
             InitializeComponent();
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(3);
             timer.Tick += Timer_Tick;
+            launching = false;
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            uploadBut.Background = Brushes.Green;
-            timer.Stop();
+            if(launching)
+            {
+                uploadBut.Background = Brushes.Green;
+                launching = false;
+            }
+            else
+            {
+                uploadBut.Background = Brushes.LightGray;
+                timer.Stop();
+            }
+            
+            
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -44,6 +56,7 @@ namespace demoGUI
         private void uploadBut_Click(object sender, RoutedEventArgs e)
         {
             timer.Start();
+            launching = true;
         }
     }
 }

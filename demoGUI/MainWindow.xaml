@@ -23,7 +23,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Label Content="Landing Zone" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="20"  />
-        <Label Content="Led Sequence" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="20"  />
+        <Label Content="LED Sequence" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="20"  />
         <Grid Grid.Column="0" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -78,7 +78,8 @@
             <Label Content="Color" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"  />
             <Label Content="Pattern" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"  />
                 <ComboBox x:Name="timeBox0" Grid.Column="0" Grid.Row="1" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
-                    <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" > 0.5s </ComboBoxItem>
+                    <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" > 0s </ComboBoxItem>
+                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" > 1s </ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1.5s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2s</ComboBoxItem>
@@ -90,24 +91,29 @@
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >5s</ComboBoxItem>
                 </ComboBox>
                 <ComboBox x:Name="ColorBox0" Grid.Column="1" Grid.Row="1" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
-                    <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Red</ComboBoxItem>
-                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Green</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Red</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Green</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blue</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">White</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Yellow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Orange</ComboBoxItem>
-                </ComboBox>
+                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Pink</ComboBoxItem>
+                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Purple</ComboBoxItem>
+                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">None</ComboBoxItem>
+                    </ComboBox>
                 <ComboBox x:Name="patternBox0" Grid.Column="2" Grid.Row="1" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                     <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Solid</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Up</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Down</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Slow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Fast</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Off</ComboBoxItem>
+                    </ComboBox>
 
                 <ComboBox x:Name="timeBox1" Grid.Column="0" Grid.Row="2" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
-                    <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
-                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1.5s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2.5s</ComboBoxItem>
@@ -124,18 +130,23 @@
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">White</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Yellow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Orange</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Pink</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Purple</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">None</ComboBoxItem>
+                    </ComboBox>
                 <ComboBox x:Name="patternBox1" Grid.Column="2" Grid.Row="2" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                     <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Solid</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Up</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Down</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Slow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Fast</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Off</ComboBoxItem>
+                    </ComboBox>
 
                 <ComboBox x:Name="timeBox2" Grid.Column="0" Grid.Row="3" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
-                    <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
-                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1.5s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2.5s</ComboBoxItem>
@@ -152,18 +163,23 @@
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">White</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Yellow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Orange</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Pink</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Purple</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">None</ComboBoxItem>
+                    </ComboBox>
                 <ComboBox x:Name="patternBox2" Grid.Column="2" Grid.Row="3" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                     <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Solid</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Up</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Down</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Slow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Fast</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Off</ComboBoxItem>
+                    </ComboBox>
 
                 <ComboBox x:Name="timeBox3" Grid.Column="0" Grid.Row="4" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
-                    <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
-                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1.5s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2.5s</ComboBoxItem>
@@ -180,18 +196,23 @@
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">White</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Yellow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Orange</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Pink</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Purple</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">None</ComboBoxItem>
+                    </ComboBox>
                 <ComboBox x:Name="patternBox3" Grid.Column="2" Grid.Row="4" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                     <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Solid</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Up</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Down</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Slow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Fast</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Off</ComboBoxItem>
+                    </ComboBox>
 
                 <ComboBox x:Name="timeBox4" Grid.Column="0" Grid.Row="5" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
-                    <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
-                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1.5s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2.5s</ComboBoxItem>
@@ -208,18 +229,23 @@
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">White</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Yellow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Orange</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Pink</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Purple</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">None</ComboBoxItem>
+                    </ComboBox>
                 <ComboBox x:Name="patternBox4" Grid.Column="2" Grid.Row="5" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                     <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Solid</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Up</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Down</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Slow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Fast</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Off</ComboBoxItem>
+                    </ComboBox>
 
                 <ComboBox x:Name="timeBox5" Grid.Column="0" Grid.Row="6" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
-                    <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
-                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1.5s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2.5s</ComboBoxItem>
@@ -236,18 +262,23 @@
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">White</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Yellow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Orange</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Pink</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Purple</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">None</ComboBoxItem>
+                    </ComboBox>
                 <ComboBox x:Name="patternBox5" Grid.Column="2" Grid.Row="6" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                     <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Solid</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Up</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Down</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Slow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Fast</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Off</ComboBoxItem>
+                    </ComboBox>
 
                 <ComboBox x:Name="timeBox6" Grid.Column="0" Grid.Row="7" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
-                    <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
-                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1.5s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2.5s</ComboBoxItem>
@@ -264,18 +295,23 @@
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">White</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Yellow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Orange</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Pink</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Purple</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">None</ComboBoxItem>
+                    </ComboBox>
                 <ComboBox x:Name="patternBox6" Grid.Column="2" Grid.Row="7" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                     <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Solid</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Up</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Down</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Slow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Fast</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Off</ComboBoxItem>
+                    </ComboBox>
 
                 <ComboBox x:Name="timeBox7" Grid.Column="0" Grid.Row="8" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
-                    <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
-                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1.5s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2.5s</ComboBoxItem>
@@ -292,18 +328,23 @@
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">White</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Yellow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Orange</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Pink</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Purple</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">None</ComboBoxItem>
+                    </ComboBox>
                 <ComboBox x:Name="patternBox7" Grid.Column="2" Grid.Row="8" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                     <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Solid</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Up</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Down</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Slow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Fast</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Off</ComboBoxItem>
+                    </ComboBox>
 
                 <ComboBox x:Name="timeBox8" Grid.Column="0" Grid.Row="9" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
-                    <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
-                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1.5s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2.5s</ComboBoxItem>
@@ -320,18 +361,23 @@
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">White</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Yellow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Orange</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Pink</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Purple</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">None</ComboBoxItem>
+                    </ComboBox>
                 <ComboBox x:Name="patternBox8" Grid.Column="2" Grid.Row="9" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                     <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Solid</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Up</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Down</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Slow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Fast</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Off</ComboBoxItem>
+                    </ComboBox>
 
                 <ComboBox x:Name="timeBox9" Grid.Column="0" Grid.Row="10" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
-                    <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
-                    <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >0.5s</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >1.5s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2s</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >2.5s</ComboBoxItem>
@@ -348,14 +394,18 @@
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">White</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Yellow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Orange</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Pink</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Purple</ComboBoxItem>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">None</ComboBoxItem>
+                    </ComboBox>
                 <ComboBox x:Name="patternBox9" Grid.Column="2" Grid.Row="10" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                     <ComboBoxItem IsSelected="True" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Solid</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Up</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Dim Down</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Slow</ComboBoxItem>
                     <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Blink Fast</ComboBoxItem>
-                </ComboBox>
+                        <ComboBoxItem FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Off</ComboBoxItem>
+                    </ComboBox>
             </Grid>
         </Border>
     </Grid>
